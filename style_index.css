@@ -1,0 +1,145 @@
+:root {
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;          
+  --color-button-text: #FFFFFF;
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+#page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 2px solid green;
+  margin-bottom: 21px;
+}
+
+h1:hover {
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: green;
+  width: 200px;
+}
+
+footer {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  border-top: 2px solid green;
+  margin-top: 21px;
+  position: fixed;
+  bottom:0;
+  width: 80%;
+}
+
+form {
+  padding: 12px;
+}
+
+.form-comp {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-size: 16px;
+  padding: 8px 6px;
+  width: 100%;
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+.form-button {
+  text-align: center;
+}
+
+button {
+  margin: 9px auto;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 12px 21px;
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dc00ff;
+  transform: translate(2px, 2px);
+}
+
+.button{
+  grid-area: button;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+
+.form-button{
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+}
+
+.form-button a{
+  width: 25rem;
+  height: 7.4rem;
+  border-radius: 0.8rem;
+  margin-right: 1.6rem;
+  font: 700 2.4rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+  color: var(--color-button-text);
+}
+
+.form-button a img{
+  width: 4rem;
+  margin-right: 2.4rem;
+}
+
+.form-button a.chat{
+  background: var(--color-primary-lighter);
+}
+
+.form-button a.chat:hover{
+  background: var(--color-primary-light);
+}

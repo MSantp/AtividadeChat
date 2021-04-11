@@ -1,0 +1,202 @@
+:root {
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;          
+  --color-button-text: #FFFFFF;
+  font-size: 60%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 2px solid green;
+  margin-bottom: 21px;
+}
+
+h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: green;
+  width: 200px;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+#page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact-area{
+  position: absolute;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 30px;
+  background-color: aquamarine;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#chat{
+  position: absolute;
+  width: 80%;
+  height: 500px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-left: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden; 
+}
+
+*::-webkit-scrollbar{
+    border-radius: 10px;
+}
+
+.received-msg {
+  float:left;
+  width: 60%;
+}
+
+.received-msg p {
+  height: 25px;
+  font-size: 18px;
+  border:1px solid black;
+  background-color: #c9c3c9;
+  border-radius: 2px;
+}
+
+.sent-msg {
+  float:right;
+  width: 60%;
+}
+.sent-msg span {
+  margin-top: 5px;
+}
+
+.sent-msg p {
+  height: 25px;
+  font-size: 18px;
+  background-color: #58ebf0;
+  border-radius: 2px;
+  border:1px solid black;
+}
+
+span{
+  font-size:12px;
+  font-weight: bold;
+}
+
+.contact{
+    height: 25px;
+    border-radius: 30px;
+    float:left;
+    margin: 2px;
+}
+
+#contact-name{
+  height: 25px;
+  border-radius: 30px;
+  float:left;
+  margin: 3px;
+}
+
+#box-to-send{
+  width: 96%;
+  height: 25px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 555px;
+}
+
+#send-button{
+  width: 3.5%;
+  height: 25px;
+  border-radius: 5px;
+  margin-top: 555px;
+  float: right;
+}
+
+button {
+  width: 50px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b6b3b6;
+}
+
+footer {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px;
+  border-top: 2px solid green;
+  margin-top: 30px;
+  position: fixed;
+  bottom:0;
+  width: 80%;
+}
+
+
+.form-button{
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+}
+
+.form-button a{
+  width: 25rem;
+  height: 7.4rem;
+  border-radius: 0.8rem;
+  margin-right: 1.6rem;
+  font: 700 2.4rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+  color: var(--color-button-text);
+}
+
+.form-button a img{
+  width: 4rem;
+  margin-right: 2.4rem;
+}
+
+.form-button a.cadastrar{
+  background: var(--color-primary-lighter);
+}
+
+.form-button a.cadastrar:hover{
+  background: var(--color-primary-light);
+}
